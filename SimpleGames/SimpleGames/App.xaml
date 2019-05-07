@@ -1,0 +1,26 @@
+﻿<Application x:Class="SimpleGames.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SimpleGames"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="menuOption" TargetType="Button">
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="0 0 25 0" BorderBrush="#EB7766" BorderThickness="5" Background="#FFD980">
+                            <ContentPresenter  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Margin" Value="0 10 0 10"/>
+        </Style>
+    </Application.Resources>
+</Application>

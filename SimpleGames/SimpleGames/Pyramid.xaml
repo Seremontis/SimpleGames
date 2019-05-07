@@ -1,0 +1,127 @@
+﻿<Window x:Class="SimpleGames.Pyramid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleGames"
+        mc:Ignorable="d"
+        Title="Pyramid" Height="450" Width="950">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="#7859FF"/>
+            <Setter Property="FontWeight" Value="ExtraBold"/>
+            <Setter Property="Background" Value="Beige" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderBrush="Black" BorderThickness="3" Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" Value="#74787A"/>
+                                <Setter Property="Foreground" Value="#CCDFE3"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="Change" TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="70"/>
+            <Setter Property="Margin" Value="200 0 0 0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button"> 
+                        <Border CornerRadius="0 90 90 0" BorderBrush="BlanchedAlmond" BorderThickness="5" Background="Coral">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="allgrid" Background="#E7FFAD">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="w0" Grid.Row="0" Width="132">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Grid x:Name="w1" Grid.Row="1" Width="264">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="w2" Grid.Row="2" Width="396">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="w3" Grid.Row="3" Width="528">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="w4" Grid.Row="4" Width="660">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="w5" Grid.Row="5" Width="792">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Grid x:Name="w6" Grid.Row="6" Width="924">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Grid Grid.Row="8" x:Name="AddRow">
+            <Label VerticalAlignment="Bottom">Dobierz karty aby suma wyniosła 13.</Label>
+            <Button x:Name="AddCard" Click="Hold_Click"></Button>
+            <Button x:Name="ChangeCard" Click="Next_Click" Style="{StaticResource ResourceKey=Change}">Next</Button>
+        </Grid>
+
+    </Grid>
+</Window>

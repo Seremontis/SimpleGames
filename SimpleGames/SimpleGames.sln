@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleGames", "SimpleGames\SimpleGames.csproj", "{69BB307E-C468-45FB-A354-A7D64EC02341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleGamesTest", "SimpleGamesTest\SimpleGamesTest.csproj", "{C976DF6B-8C39-46AB-B1F4-78A42892D77A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69BB307E-C468-45FB-A354-A7D64EC02341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69BB307E-C468-45FB-A354-A7D64EC02341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69BB307E-C468-45FB-A354-A7D64EC02341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69BB307E-C468-45FB-A354-A7D64EC02341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C976DF6B-8C39-46AB-B1F4-78A42892D77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C976DF6B-8C39-46AB-B1F4-78A42892D77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C976DF6B-8C39-46AB-B1F4-78A42892D77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C976DF6B-8C39-46AB-B1F4-78A42892D77A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D181FC90-6004-4EE7-B5F8-773C99CFA1A5}
+	EndGlobalSection
+EndGlobal
